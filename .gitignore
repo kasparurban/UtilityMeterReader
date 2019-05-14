@@ -1,0 +1,4 @@
+bin/
+obj/
+/.idea/.idea.UtilityMeterReader
+/.vs/UtilityMeterReader/v15/Server/sqlite3

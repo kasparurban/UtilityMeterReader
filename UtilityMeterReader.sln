@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterReader", "MeterReader\MeterReader.csproj", "{C271427C-7CFA-4814-8765-E3043AA2E8EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterReader.Tests", "MeterReader.Tests\MeterReader.Tests.csproj", "{1DB85D80-6016-449D-A24C-025DB576C46F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesseractTraining", "TesseractTraining\TesseractTraining.csproj", "{D27046A7-AE8D-40DD-87E0-792AF9BC2815}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C271427C-7CFA-4814-8765-E3043AA2E8EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C271427C-7CFA-4814-8765-E3043AA2E8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C271427C-7CFA-4814-8765-E3043AA2E8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C271427C-7CFA-4814-8765-E3043AA2E8EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DB85D80-6016-449D-A24C-025DB576C46F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DB85D80-6016-449D-A24C-025DB576C46F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DB85D80-6016-449D-A24C-025DB576C46F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DB85D80-6016-449D-A24C-025DB576C46F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D27046A7-AE8D-40DD-87E0-792AF9BC2815}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D27046A7-AE8D-40DD-87E0-792AF9BC2815}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D27046A7-AE8D-40DD-87E0-792AF9BC2815}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D27046A7-AE8D-40DD-87E0-792AF9BC2815}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
