@@ -75,8 +75,7 @@ namespace MeterReader
                 Cv2.BitwiseNot(numbers, numbers);
             }
 
-            numbers.SaveImage($@"C:\Users\Kape\Desktop\DifferentMeters\{Guid.NewGuid().ToString()}.png");
-            var reading = new Reading(InsertDecimal(_stringExtractor.GetStringsFromImages(numbers)),
+            var reading = new Reading(InsertDecimal(_stringExtractor.GetStringFromImage(numbers)),
                 GetScaledRectangles(resized.OriginalScale, meterNumberRectangles));
             return reading;
         }

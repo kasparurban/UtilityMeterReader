@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<TextView
+		android:text="Saaja"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		 android:gravity="center"
+		android:id="@+id/emailRecipientText" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/emailRecipientInput" />
+	<TextView
+		android:text="Pealkiri"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		 android:gravity="center"
+		android:id="@+id/emailSubjectText" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/emailSubjectInput" />
+	<TextView
+		android:text="E-kirja mall"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		 android:gravity="center"
+		android:id="@+id/emailTemplateText" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/emailTemplateInput" />
+	<Button
+		android:text="Salvesta"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/saveEmailTemplateButton" />
+	<Button
+		android:text="Katkesta"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/cancelEmailTemplateButton" />
+</LinearLayout>

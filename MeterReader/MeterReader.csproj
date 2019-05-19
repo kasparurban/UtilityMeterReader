@@ -10,8 +10,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove="App_Data\num.traineddata" />
-      <EmbeddedResource Include="App_Data\num.traineddata" />
+      <None Update="App_Data\tessdata\num.traineddata">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
 
 </Project>

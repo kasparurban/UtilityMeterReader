@@ -10,12 +10,12 @@ namespace MeterReader
 
         public ImageStringExtractor()
         {
-            _tessEngine = new TesseractEngine(@"C:\Users\Kape\Desktop\GeneratedMeterTrainData", "num",
+            _tessEngine = new TesseractEngine(@"App_Data", "num",
                 EngineMode.Default);
             _tessEngine.SetVariable("tessedit_char_whitelist", "0123456789");
         }
         
-        public string GetStringsFromImages(Mat image)
+        public string GetStringFromImage(Mat image)
         {
             using (var pix = Pix.LoadTiffFromMemory(image.ImEncode(".tiff")))
             {

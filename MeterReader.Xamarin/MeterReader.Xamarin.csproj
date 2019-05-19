@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="OpenCvSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>OpenCvSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="OpenCvSharp.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>OpenCvSharp.Android.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Xamarin.Tesseract" Version="0.3.4" />
+    </ItemGroup>
+
+</Project>

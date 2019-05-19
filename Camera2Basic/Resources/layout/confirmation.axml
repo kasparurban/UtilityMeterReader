@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<TextView
+		android:text="Arvesti näit"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		 android:gravity="center"
+		android:id="@+id/readingTextView" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:id="@+id/readingEditText" />
+	<ImageView
+		android:src="@android:drawable/ic_menu_gallery"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/readingImage" />
+	<Button
+		android:text="Tuvasta uus näit"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/captureAnotherReadingButton" />
+	<Button
+		android:text="Saada"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/sendEmailButton" />
+	<Button
+		android:text="Katkesta"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/cancelReadingButton" />
+</LinearLayout>

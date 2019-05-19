@@ -1,10 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterReader", "MeterReader\MeterReader.csproj", "{C271427C-7CFA-4814-8765-E3043AA2E8EF}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeterReader", "MeterReader\MeterReader.csproj", "{C271427C-7CFA-4814-8765-E3043AA2E8EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterReader.Tests", "MeterReader.Tests\MeterReader.Tests.csproj", "{1DB85D80-6016-449D-A24C-025DB576C46F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeterReader.Tests", "MeterReader.Tests\MeterReader.Tests.csproj", "{1DB85D80-6016-449D-A24C-025DB576C46F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesseractTraining", "TesseractTraining\TesseractTraining.csproj", "{D27046A7-AE8D-40DD-87E0-792AF9BC2815}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesseractTraining", "TesseractTraining\TesseractTraining.csproj", "{D27046A7-AE8D-40DD-87E0-792AF9BC2815}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camera2Basic", "Camera2Basic\Camera2Basic.csproj", "{7AB960BF-C0FF-47C8-8B1D-6AB9B45C97A9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeterReader.Xamarin", "MeterReader.Xamarin\MeterReader.Xamarin.csproj", "{5BC7961E-7F97-4837-AD84-19626DE65DAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +31,20 @@ Global
 		{D27046A7-AE8D-40DD-87E0-792AF9BC2815}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D27046A7-AE8D-40DD-87E0-792AF9BC2815}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D27046A7-AE8D-40DD-87E0-792AF9BC2815}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AB960BF-C0FF-47C8-8B1D-6AB9B45C97A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AB960BF-C0FF-47C8-8B1D-6AB9B45C97A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AB960BF-C0FF-47C8-8B1D-6AB9B45C97A9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7AB960BF-C0FF-47C8-8B1D-6AB9B45C97A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AB960BF-C0FF-47C8-8B1D-6AB9B45C97A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BC7961E-7F97-4837-AD84-19626DE65DAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BC7961E-7F97-4837-AD84-19626DE65DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BC7961E-7F97-4837-AD84-19626DE65DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BC7961E-7F97-4837-AD84-19626DE65DAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B83A6467-0B41-4AAC-9B46-95B4C0CD5381}
 	EndGlobalSection
 EndGlobal
