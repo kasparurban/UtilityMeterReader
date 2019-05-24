@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeterReader.Tests", "MeterR
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesseractTraining", "TesseractTraining\TesseractTraining.csproj", "{D27046A7-AE8D-40DD-87E0-792AF9BC2815}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Camera2Basic", "Camera2Basic\Camera2Basic.csproj", "{7AB960BF-C0FF-47C8-8B1D-6AB9B45C97A9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileApp.Android", "MobileApp.Android\MobileApp.Android.csproj", "{7AB960BF-C0FF-47C8-8B1D-6AB9B45C97A9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeterReader.Xamarin", "MeterReader.Xamarin\MeterReader.Xamarin.csproj", "{5BC7961E-7F97-4837-AD84-19626DE65DAD}"
 EndProject

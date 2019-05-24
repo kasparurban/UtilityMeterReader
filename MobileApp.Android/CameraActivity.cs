@@ -11,7 +11,7 @@ using Android.Content.PM;
 [assembly: Application(LargeHeap = true)]
 namespace Camera2Basic
 {
-	[Activity (Label = "Camera2Basic", MainLauncher = true, Icon = "@drawable/icon", ScreenOrientation = ScreenOrientation.Portrait)]
+	[Activity (Label = "MobileApp.Android", MainLauncher = true, Icon = "@drawable/icon", ScreenOrientation = ScreenOrientation.Portrait)]
 	public class CameraActivity : Activity
 	{
 		protected override void OnCreate (Bundle bundle)
