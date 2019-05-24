@@ -50,6 +50,7 @@ namespace MeterReader.Xamarin
                     var rect = new Rect(r.Position.X, r.Position.Y, r.Width, r.Height);
                     return new Mat(noiseReduced, rect)
                         .Threshold(0, 255, ThresholdTypes.Otsu)
+                        .Erode(new Mat())
                         .ResizePreserveAspectRatio(_settings.DarkSectorsSeparateMeterNumbersResizeMaxSize).Image;
                 }).ToArray();
             }

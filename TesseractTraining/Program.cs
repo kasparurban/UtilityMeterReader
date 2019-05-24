@@ -6,7 +6,9 @@ namespace TesseractTraining
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var tesstrain = new TessTraining(50, @"", @"", @"");
+            tesstrain.TrainTesseract();
+            Console.WriteLine("END");
         }
     }
 }

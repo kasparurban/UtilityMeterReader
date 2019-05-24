@@ -44,6 +44,7 @@ namespace MeterReader
                     var rect = new Rect(r.Position.X, r.Position.Y, r.Width, r.Height);
                     return new Mat(noiseReduced, rect)
                         .Threshold(0, 255, ThresholdTypes.Otsu)
+                        .Erode(new Mat())
                         .ResizePreserveAspectRatio(_settings.DarkSectorsSeparateMeterNumbersResizeMaxSize).Image;
                 }).ToArray();
             }
@@ -70,7 +71,7 @@ namespace MeterReader
                 .Aggregate(croppedImages[0], (a, b) => a.CombineImages(b), r => r);
 
             var numbers = combinedNumbers.WidenEdges(10);
-            if (_settings.DarkSectors)
+            if (!_settings.DarkSectors)
             {
                 Cv2.BitwiseNot(numbers, numbers);
             }
