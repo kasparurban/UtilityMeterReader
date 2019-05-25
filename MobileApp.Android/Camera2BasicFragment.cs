@@ -635,21 +635,31 @@ namespace Camera2Basic
                 mConfirmationModal.Dismiss();
                 UpdateReadingsText();
             };
-            view.FindViewById<Button>(Resource.Id.captureAnotherReadingButton).Click += (object sender, EventArgs e) =>
+            if(mEmailSettings.NumberOfRequiredReadings > mReadings.Count + 1)
             {
-                var confirmedReading = mConfirmationModal.FindViewById<EditText>(Resource.Id.readingEditText).Text;
-                mReadings.Add(confirmedReading);
-                mConfirmationModal.Dismiss();
-                UpdateReadingsText();
-            };
-            view.FindViewById<Button>(Resource.Id.sendEmailButton).Click += (object sender, EventArgs e) =>
+                var button = view.FindViewById<Button>(Resource.Id.captureAnotherReadingButton);
+                button.Visibility = ViewStates.Visible;
+                button.Click += (object sender, EventArgs e) =>
+                {
+                    var confirmedReading = mConfirmationModal.FindViewById<EditText>(Resource.Id.readingEditText).Text;
+                    mReadings.Add(confirmedReading);
+                    mConfirmationModal.Dismiss();
+                    UpdateReadingsText();
+                };
+            }
+            else
             {
-                var confirmedReading = mConfirmationModal.FindViewById<EditText>(Resource.Id.readingEditText).Text;
-                mReadings.Add(confirmedReading);
-                mConfirmationModal.Dismiss();
-                SendEmail();
-                UpdateReadingsText();
-            };
+                var button = view.FindViewById<Button>(Resource.Id.sendEmailButton);
+                button.Visibility = ViewStates.Visible;
+                button.Click += (object sender, EventArgs e) =>
+                {
+                    var confirmedReading = mConfirmationModal.FindViewById<EditText>(Resource.Id.readingEditText).Text;
+                    mReadings.Add(confirmedReading);
+                    mConfirmationModal.Dismiss();
+                    SendEmail();
+                    UpdateReadingsText();
+                };
+            }
             view.FindViewById<EditText>(Resource.Id.readingEditText).Text = reading;
             using(var stream = image.ToMemoryStream())
             {

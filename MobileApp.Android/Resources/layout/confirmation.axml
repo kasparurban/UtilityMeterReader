@@ -26,12 +26,15 @@
 		android:text="Tuvasta uus näit"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/captureAnotherReadingButton" />
+		android:id="@+id/captureAnotherReadingButton"
+		android:enabled="true"
+		android:visibility="gone" />
 	<Button
 		android:text="Saada"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/sendEmailButton" />
+		android:id="@+id/sendEmailButton"
+		android:visibility="gone" />
 	<Button
 		android:text="Katkesta"
 		android:layout_width="match_parent"
