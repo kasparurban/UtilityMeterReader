@@ -2,12 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="MobileApp.Android.MobileApp.Android" android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="15" />
 	<application android:label="MeterReader">
-    <provider android:name="android.support.v4.content.FileProvider"
-          android:authorities="MobileApp.Android.MobileApp.Android.fileprovider"
-          android:exported="false"
-          android:grantUriPermissions="true">
-      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"></meta-data>
-    </provider>
-  </application>
+		<provider android:name="android.support.v4.content.FileProvider" android:authorities="MobileApp.Android.MobileApp.Android.fileprovider" android:exported="false" android:grantUriPermissions="true">
+			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"></meta-data>
+		</provider>
+	</application>
 	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.FLASHLIGHT" />
 </manifest>

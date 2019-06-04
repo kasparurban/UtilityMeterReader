@@ -137,6 +137,8 @@ namespace Camera2Basic
         private EmailSettings mEmailSettings;
         private ReadingAccuracyModule mAccuracyModule;
 
+        private bool mFlashLightOn = false;
+
         // Shows a {@link Toast} on the UI thread.
         public void ShowToast(string text)
         {
@@ -195,6 +197,7 @@ namespace Camera2Basic
             mSectorColorToggleButton.SetOnClickListener(this);
 
             ((ImageView)view.FindViewById(Resource.Id.emailTemplateButton)).SetOnClickListener(this);
+            ((ImageView)view.FindViewById(Resource.Id.flashlightToggleButton)).SetOnClickListener(this);
 
 
             _cameraPreviewTexture = (TextureView)view.FindViewById(Resource.Id.texture);
@@ -597,15 +600,6 @@ namespace Camera2Basic
             _cameraPreviewTexture.SetTransform(matrix);
         }
 
-
-        public void SetAutoFlash(CaptureRequest.Builder requestBuilder)
-        {
-            if (mFlashSupported)
-            {
-                requestBuilder.Set(CaptureRequest.ControlAeMode, (int)ControlAEMode.OnAutoFlash);
-            }
-        }
-
         public void OnClick(View v)
         {
             if (v.Id == Resource.Id.sectorColorToggleButton)
@@ -618,6 +612,26 @@ namespace Camera2Basic
             {
                 ShowEmailTemplateModal();
             }
+            if (v.Id == Resource.Id.flashlightToggleButton)
+            {
+                ToggleFlashLight();
+            }
+        }
+
+        private void ToggleFlashLight()
+        {
+            if (!mFlashLightOn)
+            {
+                mPreviewRequestBuilder.Set(CaptureRequest.FlashMode, (int)FlashMode.Torch);
+                mFlashLightOn = true;
+            }
+            else
+            {
+                mPreviewRequestBuilder.Set(CaptureRequest.FlashMode, (int)FlashMode.Off);
+                mFlashLightOn = false;
+            }
+            mPreviewRequest = mPreviewRequestBuilder.Build();
+            mCaptureSession.SetRepeatingRequest(mPreviewRequest, mCaptureCallback, mBackgroundHandler);
         }
 
         private void ShowConfirmationModal(string reading, Mat image)

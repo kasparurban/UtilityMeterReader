@@ -25,6 +25,11 @@
 			android:layout_height="80dp"
 			android:id="@+id/emailTemplateButton"/>
 		<ImageView
+			android:src="@drawable/flashlight_button"
+			android:layout_width="80dp"
+			android:layout_height="80dp"
+			android:id="@+id/flashlightToggleButton"/>
+		<ImageView
 			android:src="@drawable/dark_sector_button"
 			android:layout_width="80dp"
 			android:layout_height="80dp"
