@@ -64,6 +64,9 @@
       <None Update="TestData\DifferentLighting\4.png">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
+      <None Update="TestData\MeterWithBlackSegmentSeparators\1.PNG">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
 
 </Project>

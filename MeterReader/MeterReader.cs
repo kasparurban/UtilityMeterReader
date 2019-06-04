@@ -16,7 +16,6 @@ namespace MeterReader
             _stringExtractor = new ImageStringExtractor();
         }
 
-
         public void ReverseNumberColors()
         {
             _settings.DarkSectors = !_settings.DarkSectors;
@@ -90,7 +89,6 @@ namespace MeterReader
                 _settings.DarkSectors ? ThresholdTypes.Binary : ThresholdTypes.BinaryInv, 
                 _settings.NumbersDetectionAdaptiveThresholdBlockSize, 
                 _settings.NumbersDetectionAdaptiveThresholdC);
-            
             return blobDetector.DetectMeterNumbers(threshold).ToArray();
         }
 
@@ -104,6 +102,10 @@ namespace MeterReader
 
         private string InsertDecimal(string inputReading)
         {
+            if (inputReading.Length <= _settings.FullPartSectors)
+            {
+                return inputReading;
+            }
             return inputReading.Insert(_settings.FullPartSectors, ",");
         }
     }
